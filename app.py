@@ -2,10 +2,11 @@ from pytube import YouTube
 from moviepy.editor import *
 import os
 
-print("Welcome to Chase's YouTube Converter, made by Dominic, his favorite owner")
+
+user_url = input("Enter the URL of the YouTube video that you want to convert: ")
 
 # The list of all YouTube URL's to convert 
-url_collection = ['https://www.youtube.com/watch?v=rdMReUOMKyI']
+url_collection = [user_url]
 
 for url in url_collection:
     youtube = YouTube(url)
